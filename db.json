@@ -1,0 +1,171 @@
+{
+  "users": [
+    {
+      "name": "Fanny",
+      "surname": "Ramos",
+      "email": "fanny@mail.com",
+      "password": "123456",
+      "token": "7DHvGBSO7Z6UdrMM10hf",
+      "rol": "ADMINISTRADOR",
+      "id": 1
+    },
+    {
+      "name": "Nestor",
+      "surname": "Ramos",
+      "email": "gabriel@mail.com",
+      "password": "123456",
+      "rol": "USUARIO",
+      "token": "7DHvGBSO7Z6UdrMM10hi",
+      "id": 2
+    },
+    {
+      "name": "Camila",
+      "surname": "Ramos",
+      "email": "selene@mail.com",
+      "password": "167932",
+      "token": "7DHvGBSO7Z6UdrMM10hd",
+      "id": 3
+    },
+    {
+      "name": "Mirta",
+      "email": "guill@mail.com",
+      "password": "123456",
+      "surname": "Guillermina",
+      "token": "BBGpxqkgXBbVBJRY4Bm2",
+      "id": 4
+    },
+    {
+      "name": "Omar",
+      "email": "Omar@mail.com",
+      "password": "123456",
+      "surname": "Ramos",
+      "token": "7DHvGBSO7Z6UdrMM10ac",
+      "id": 5
+    },
+    {
+      "name": "carlos",
+      "email": "carlos@mail.com",
+      "password": "123456",
+      "surname": "Ramos",
+      "token": "mqvMKs0rHw26gkI1AFSk",
+      "id": 6
+    }
+  ],
+  "cursos": [
+    {
+      "id": 5,
+      "title": "Angular",
+      "subtitle": "Curso Angular",
+      "description": "Angular es una plataforma para crear aplicaciones de escritorio web y móviles."
+    },
+    {
+      "id": 6,
+      "title": "JavaScript",
+      "subtitle": "Curso JavaScript",
+      "description": "JavaScript es un lenguaje de secuencias de comandos que te permite crear .."
+    },
+    {
+      "id": 7,
+      "title": "HTML,CSS",
+      "subtitle": "Curso Desarrollo Web",
+      "description": "Aprender las bases del desarrollo web con estos lenguajes desde cero."
+    },
+    {
+      "id": 8,
+      "title": "Java",
+      "subtitle": "Curso Java",
+      "description": "un lenguaje de programación que se compila en bytecode y se ejecuta .."
+    },
+    {
+      "id": 9,
+      "title": "Python",
+      "subtitle": "Curso Python",
+      "description": "Python es un lenguaje de programación que te permite trabajar .."
+    },
+    {
+      "id": 10,
+      "title": "MySQL",
+      "subtitle": "Curso MySQL",
+      "description": "MySQL es un sistema de gestión de bases de datos relacional .."
+    },
+    {
+      "id": 11,
+      "title": "React",
+      "subtitle": "Curso React",
+      "description": "React es una biblioteca de JavaScript de código abierto para .."
+    },
+    {
+      "title": "docker",
+      "subtitle": "docker",
+      "description": "Aprenderás el motivo por el cual Docker es una de las herramientas más usadas ..",
+      "id": 12
+    }
+  ],
+  "materias": [
+    {
+      "id": 1,
+      "title": "Desarrollo web",
+      "nameteacher": "Prof. Lili Veracruz"
+    },
+    {
+      "id": 2,
+      "title": "Angular",
+      "nameteacher": "Prof. Miguel Gonzales"
+    },
+    {
+      "title": "Java",
+      "nameteacher": "Prof. Mariel Agustin",
+      "id": 3
+    },
+    {
+      "title": "Diseno",
+      "nameteacher": "prof. Bella Luz",
+      "id": 4
+    },
+    {
+      "title": "Desarrollo web",
+      "nameteacher": "prof. Luna William",
+      "id": 5
+    }
+  ],
+  "alumnos": [
+    {
+      "name": "fernanda",
+      "surname": "martinez",
+      "email": "martinez@mail.com",
+      "token": "gFLk6rTqUdJx0B8yixHz",
+      "id": 2
+    },
+    {
+      "name": "Agustin",
+      "surname": "lian",
+      "email": "liane@mail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "Alejandro",
+      "surname": "rosas",
+      "email": "rodrigo@mail.com",
+      "password": "123456",
+      "id": 4
+    }
+  ],
+  "Inscripciones": [
+    {
+      "id": 3,
+      "cursoId": 6,
+      "alumnoId": 3
+    },
+    {
+      "id": 4,
+      "cursoId": 7,
+      "alumnoId": 4
+    },
+    {
+      "cursoId": 8,
+      "alumnoId": 4,
+      "id": 5
+    }
+  ]
+}

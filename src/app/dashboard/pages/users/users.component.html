@@ -1,0 +1,14 @@
+
+
+<h1><span appSizeTittle>Listado de Usuarios</span></h1>
+
+<app-user-table [dataSource]="(users | async) || []"
+(deleteUser)="onDeleteUser($event)"
+(editUser)="onEditUser($event)"></app-user-table>
+
+<div class="mb-5 p-3" >
+    <button (click)="onCreateUser()" mat-flat-button color="primary" type="button">
+     <mat-icon>add</mat-icon>
+        Crear Usuario
+    </button>
+    </div>
