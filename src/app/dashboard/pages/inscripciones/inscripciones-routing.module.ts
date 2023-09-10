@@ -14,10 +14,7 @@ import { RouterModule } from '@angular/router';
           path: '',
           component: InscripcionesComponent,
       },
-      // {
-      //     path: 'inscripciones/:id',
-      //     component: InscripcionesDetailComponent,
-      // },
+    
   ])
   ]
 })

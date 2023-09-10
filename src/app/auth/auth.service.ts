@@ -12,8 +12,7 @@ import { AuthActions } from "../store/auth/auth.actions";
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  // private _authUser$ = new BehaviorSubject<User | null>(null);
-  // public authUser$ = this._authUser$.asObservable();
+ 
 
   constructor(
     private notifier: NotifierService,
@@ -22,7 +21,7 @@ export class AuthService {
     private store:Store) {}
 
   isAutenticated(): Observable<boolean> {
-    // return this.authUser$.pipe(take(1), map((user) => !!user));
+    
     return this.HttpClient.get<User[]>(environment.baseApiUrl + '/users',{
       params:{
         token:localStorage.getItem('token') || '',
@@ -31,7 +30,7 @@ export class AuthService {
 
       if(usersResult.length){
         const authUser = usersResult[0];
-        // this._authUser$.next(authUser);
+      
         this.store.dispatch(AuthActions.setAuthUser({payload : authUser}))
       }
       return !!usersResult.length
@@ -48,14 +47,14 @@ export class AuthService {
     next:(response)=>{
       if (response.length) {
         const authUser = response[0];
-        // this._authUser$.next(authUser);
+       
         this.router.navigate(['/dashboard/home']); 
         localStorage.setItem('token', authUser.token);
     
         
       } else {
         this.notifier.showError('Email o Contraseña invalida');
-        // this._authUser$.next(null);
+       
         this.store.dispatch(AuthActions.setAuthUser({payload:null}))
       }
 

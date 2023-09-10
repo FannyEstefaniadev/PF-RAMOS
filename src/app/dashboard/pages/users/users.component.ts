@@ -28,11 +28,11 @@ export class UsersComponent implements OnDestroy {
 
   onCreateUser(): void {
     this.matDialog
-      // ABRO EL MODAL
+      
       .open(UserFormDialogComponent)
-      // Y DESPUES DE QUE CIERRE
+      
       .afterClosed()
-      // HAGO ESTO...
+      
       .subscribe({
         next: (v) => {
           if (v) {
@@ -56,14 +56,14 @@ export class UsersComponent implements OnDestroy {
 
   onEditUser(userToEdit: User): void {
     this.matDialog
-      // ABRO EL MODAL
+      
       .open(UserFormDialogComponent, {
-        // LE ENVIO AL MODAL, EL USUARIO QUE QUIERO EDITAR
+        
         data: userToEdit,
       })
-      // Y DESPUES DE QUE CIERRE
+      
       .afterClosed()
-      // HAGO ESTO...
+      
       .subscribe({
         next: (userUpdated) => {
           if (userUpdated) {

@@ -31,16 +31,16 @@ export class CursosService {
       
     }).subscribe({
       next: (response) => {
-        // SI TODO SALE OK...
+        
         this._users$.next(response);
       },
       error: () => {
-        // SI TODO SALE MAL
+        
         this.notifier.showError('Error al cargar los cursos');
       },
       complete: () => {
         this._isLoading$.next(false);
-        // SE COMPLETO EL OBSERVABLE
+        
       },
     })
 

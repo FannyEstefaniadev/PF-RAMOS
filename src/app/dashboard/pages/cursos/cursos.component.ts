@@ -37,11 +37,8 @@ export class CursosComponent implements OnDestroy{
   
   onCreateCursos(): void {
     this.matDialog
-      // ABRO EL MODAL
       .open(CursosFormDialogComponent)
-      // Y DESPUES DE QUE CIERRE
       .afterClosed()
-      // HAGO ESTO...
       .subscribe({
         next: (v) => {
           if (v) {
@@ -66,14 +63,14 @@ export class CursosComponent implements OnDestroy{
 
   onEditCursos(cursosToEdit: Cursos): void {
     this.matDialog
-      // ABRO EL MODAL
+      
       .open(CursosFormDialogComponent, {
-        // LE ENVIO AL MODAL, EL USUARIO QUE QUIERO EDITAR
+        
         data: cursosToEdit,
       })
-      // Y DESPUES DE QUE CIERRE
+
       .afterClosed()
-      // HAGO ESTO...
+      
       .subscribe({
         next: (cursosUpdated) => {
           if (cursosUpdated) {

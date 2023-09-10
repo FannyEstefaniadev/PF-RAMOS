@@ -142,13 +142,6 @@
       "email": "liane@mail.com",
       "password": "123456",
       "id": 3
-    },
-    {
-      "name": "Alejandro",
-      "surname": "rosas",
-      "email": "rodrigo@mail.com",
-      "password": "123456",
-      "id": 4
     }
   ],
   "Inscripciones": [
@@ -156,16 +149,6 @@
       "id": 3,
       "cursoId": 6,
       "alumnoId": 3
-    },
-    {
-      "id": 4,
-      "cursoId": 7,
-      "alumnoId": 4
-    },
-    {
-      "cursoId": 8,
-      "alumnoId": 4,
-      "id": 5
     }
   ]
 }
