@@ -2,5 +2,14 @@
 *{
     box-sizing: border-box;
 }
+
+main {
+    background-image: url("./assets/subvertivo-_lab-8HrVclautyw-unsplash.jpg");
+    background-size: cover; // Esto ajustará la imagen para que cubra todo el elemento main
+    background-repeat: no-repeat; // Evita que la imagen se repita
+    background-position: center; // Centra la imagen en el elemento main
+    height: 100vh; // Esto ajustará la altura del elemento main al 100% del viewport height (altura de la ventana del navegador)
+  }
+  
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -6,7 +6,7 @@
   }
   
   .example-header-image {
-    background-image: url('https://openclipart.org/image/2400px/svg_to_png/272339/angular.png');
+    background-image: url('../../../../assets/icons8-desarrollo-64.png');
     background-size: cover;
   }
   div{
@@ -15,4 +15,52 @@
    
  
    
+  }
+
+
+
+  
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .mat-card {
+    width: calc(33.33% - 20px); /* Ancho de cada tarjeta, ajusta según tus necesidades */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .mat-card:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón por encima */
+  }
+  
+  .mat-card-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  .mat-card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+ 
+  .mat-card-content {
+    padding: 16px;
+  }
+  
+  .mat-card-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  
+  button.mat-button:hover {
+    background-color: #0056b3;
   }

@@ -1,9 +1,15 @@
 main{
    
-    background-image:url("https://i1.wp.com/webadictos.com/media/2021/08/coder-house.jpeg?fit=1920%2C1080&ssl=1");
-    background-repeat: no-repeat;
+    background-image:url("../../assets/subvertivo-_lab-8HrVclautyw-unsplash.jpg");
+    
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh; 
    
 }
+
+
 .flex-container {
     display: flex;
     justify-content: center;
